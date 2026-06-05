@@ -1,3 +1,5 @@
+#Hangman game- CodeAlpha Internship
+
 import random
 
 words = ["apple", "book", "cat", "python", "code"]
