@@ -1,0 +1,6 @@
+Stock Portfolio Summary
+------------------------------
+AAPL: 2 x 180 = 360
+TSLA: 3 x 250 = 750
+------------------------------
+Total Investment: 1110
