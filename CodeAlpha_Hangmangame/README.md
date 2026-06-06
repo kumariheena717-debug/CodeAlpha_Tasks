@@ -1,32 +1,52 @@
-import random
+CodeAlpha Hangman Game
 
-words = ["apple", "book", "cat", "python", "code"]
-word = random.choice(words)
+Domain:Python Programming Internship
 
-guessed = []
-tries = 6
+Intern:Heena Kumari
 
-while tries > 0:
-    display = ""
-    for letter in word:
-        if letter in guessed:
-            display += letter
-        else:
-            display += "_"
+Organization:CodeAlpha
 
-    print("Word:", display)
+Project Overview
 
-    if "_" not in display:
-        print("You won!")
-        break
+This is a simple text-based Hangman Game developed as part of the CodeAlpha Python Programming Internship. The player has to guess a hidden word one letter at a time within a limited number of incorrect attempts.
 
-    guess = input("Guess a letter: ")
+Features
 
-    if guess in word:
-        guessed.append(guess)
-    else:
-        tries -= 1
-        print("Wrong! Tries left:", tries)
+* Randomly selects a word from a predefined list.
+* Allows the user to guess one letter at a time.
+* Displays correctly guessed letters.
+* Limits incorrect guesses to 6 attempts.
+* Shows win or lose message at the end.
 
-if tries == 0:
-    print("You lost! Word was:", word)
+Technologies Used
+
+* Python
+* Random Module
+* Loops
+* Conditional Statements
+* Strings
+* Lists
+
+How to Run
+
+1. Open the project in VS Code.
+2. Open the terminal.
+3. Run:
+
+python hangman.py
+
+Sample Gameplay
+
+Word: _ _ _ _ _
+
+Guess a letter: a
+
+Correct Guess!
+
+Word: a _ _ _ a
+
+Guess a letter: z
+
+Wrong Guess! Attempts left: 5
+
+Game continues until the player wins or runs out of attempts.
