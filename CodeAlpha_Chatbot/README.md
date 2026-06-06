@@ -1,21 +1,45 @@
-def chatbot():
-    print("🤖 Chatbot Started!")
-    print("Type 'bye' to exit.\n")
+# CodeAlpha Basic Chatbot
 
-    while True:
-        user = input("You: ").lower()
+Domain:Python Programming Internship
 
-        if user == "hello":
-            print("Bot: Hi!")
+Intern:Heena Kumari
 
-        elif user == "how are you":
-            print("Bot: I'm fine, thanks!")
+Organization:CodeAlpha
 
-        elif user == "bye":
-            print("Bot: Goodbye!")
-            break
+Project Overview
 
-        else:
-            print("Bot: Sorry, I don't understand.")
+This is a rule-based chatbot developed as part of the CodeAlpha Python Programming Internship. The chatbot interacts with users through simple text-based conversations and responds to predefined inputs.
 
-chatbot()
+Features
+
+* Responds to “hello” with a greeting.
+* Responds to “how are you” with a predefined message.
+* Exits the conversation when the user types “bye”.
+* Handles unknown inputs gracefully.
+
+Technologies Used
+
+* Python
+* Functions
+* Loops
+* If-elif statements
+* Input/Output
+
+How to Run
+
+1. Open the project in VS Code.
+2. Open the terminal.
+3. Run:
+
+python chatbot.py
+
+Sample Interaction
+
+You: hello
+Bot: Hi!
+
+You: how are you
+Bot: I’m fine, thanks!
+
+You: bye
+Bot: Goodbye!
